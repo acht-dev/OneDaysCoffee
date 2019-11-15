@@ -1,25 +1,7 @@
 @extends('layout.layout')
-@section('banner')
-<!-- start banner Area -->
-<section class="banner-area" id="home">
-    <div class="container">
-        <div class="row fullscreen d-flex align-items-center justify-content-start">
-            <div class="banner-content col-lg-7">
-                <h6 class="text-white text-uppercase">Now you can feel the Energy</h6>
-                <h1>
-                    Start your day with <br>
-                    a black Coffee
-                </h1>
-                <a href="#" class="primary-btn text-uppercase">Buy Now</a>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End banner Area -->
-@endsection
 
 @section('header')
-<div class="menu-content pb-60 col-lg-10">
+<div class="menu-content mt-5 col-lg-10">
     <div class="title text-center">
         <h1 class="mb-10">Pendaftaran Member</h1>
         <p>Yuk Registrasi Diri Kamu!</p>
@@ -28,7 +10,25 @@
 @endsection
 
 @section('menu')
-<div class="col-lg-8 offset-lg-3">
+
+<div class="container w-50 my-4">
+    <form method="POST" action="/store">
+        {{ csrf_field() }}
+    <div class="h6 p-2">Biodata</div>
+      <input type="text" name="nama" class="form-control my-1" id="" aria-describedby="emailHelpId" placeholder="Nama">
+      <input type="email" name="email" class="form-control my-1" id="" aria-describedby="emailHelpId" placeholder="Email">
+      <input type="text" name="no_tlp" class="form-control my-1" id="" aria-describedby="emailHelpId" placeholder="No. Telepon">
+      <textarea type="text" name="alamat" class="form-control my-1" rows="3" id="" aria-describedby="emailHelpId" placeholder="Alamat"></textarea>
+      <div class="h6 mt-4 p-2">Akun</div>
+      <input type="text" name="username" class="form-control my-1" id="" aria-describedby="emailHelpId" placeholder="Username Akun">
+      <input type="password" name="pass" class="form-control my-1" id="" aria-describedby="emailHelpId" placeholder="Password Akun">
+        <button type="submit" class="btn btn-primary btn-block" value="register">Registrasi</button>
+        <p class="h5 mt-5 text-center">Sudah punya Akun ?</p>
+        <a  class="btn btn-outline-primary btn-block my-1" href="/login">Login</a>
+    </form>
+</div>
+
+{{-- <div class="col-lg-8 offset-lg-3">
     <form method="POST" action="/store">
         {{ csrf_field() }}
     <div class="row">
@@ -82,12 +82,12 @@
     </div>
     <div class="row">
         <div class="col-md-3">
-            <p>Sudah Ada Akun?<a href="/login"> Login</a></p>
+            <p>Sudah Ada Akun?<a href="/login">Login</a></p>
         </div>
         <div class="col-md-9">
             <input type="submit" value="register">
         </div>
     </div>
 </form>
-</div>
+</div> --}}
 @endsection

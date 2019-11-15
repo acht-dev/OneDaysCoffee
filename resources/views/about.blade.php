@@ -1,32 +1,18 @@
 @extends('layout.layout')
 @section('banner')
 <!-- start banner Area -->
-<section class="banner-area" id="home">
+<div class="h-25" style="background:url({{asset('/img/banner-01.jpg')}})" id="home">
     <div class="container">
-        <div class="row fullscreen d-flex align-items-center justify-content-start">
-            <div class="banner-content col-lg-7">
-                <h6 class="text-white text-uppercase">Now you can feel the Energy</h6>
-                <h1>
-                    Start your day with <br>
-                    a black Coffee
-                </h1>
-                <a href="#" class="primary-btn text-uppercase">Buy Now</a>
+        <div class="fullscreen d-flex align-items-center justify-content-start">
+            <div class="menu-content p-5 my-5 card col-lg-10">
+                <div class="title text-center">
+                    <img  src="img/logo_brown.png" class="img" height="120" alt="" title="" />
+                    <h1>One Days Coffe Shop</h1>
+                    <p class="my-4">One Days Coffe Shop adalah Coffee shop Terbaik se-Bekasi, Kami menyediakan banyak pilihan kopi dari berbagai macam biji pilihan. Kami menyediakan Kopi dalam bentuk Roasted bean, bubuk dan dalam bentuk beverages yang siap diminati pecinta kopi dan para penikmat senja</p>
+                </div>
             </div>
         </div>
     </div>
-</section>
-<!-- End banner Area -->
-@endsection
-@section('header')
-<div class="menu-content pb-60 col-lg-10">
-    <div class="title text-center">
-            <h1>INI About Coffee</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum rem accusamus possimus temporibus veniam
-                iure, ab fuga obcaecati ea necessitatibus repellendus ut quasi consectetur natus sint doloribus vitae
-                libero? Eius!</p>
-    </div>
 </div>
-@endsection
-@section('menu')
-
+<!-- End banner Area -->
 @endsection

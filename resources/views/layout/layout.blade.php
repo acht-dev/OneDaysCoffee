@@ -21,6 +21,7 @@
     <!--
 			CSS
 			============================================= -->
+    <link rel="stylesheet" href="{{asset('/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('/css/linearicons.css')}}">
     <link rel="stylesheet" href="{{asset('/css/font-awesome.min.css')}}">
     <link rel="stylesheet" href="{{asset('/css/bootstrap.css')}}">
@@ -34,16 +35,18 @@
 
 <body>
 
-    <header id="header" id="home">
+    <header class="bg-coffee" id="header" id="home">
         <div class="container">
             <div class="row align-items-center justify-content-between d-flex">
-                <div id="logo">
-                    <a href="index.html"><img src="img/logo_brown.png" style="width:50px;height:50px" alt="" title="" /></a>
+                <div id="logo" class="" >
+                    <a href="/home" class="navbar-brand">
+                        <img  src="img/logo_light_Brown.png" class="img" height="75" alt="" title="" />
+                    </a>
                 </div>
                 <nav id="nav-menu-container">
                     <ul class="nav-menu">
                         <li class="menu-active"><a href="/home">Home</a></li>
-                        <li class="menu-has-children"><a href="">Main Menu</a>
+                        <li class="menu-has-children text-white"><a>Main Menu</a>
                             <ul>
                                 <li><a href="/coffee">Coffee</a></li>
                                 <li><a href="/bijih">Coffee Beans</a></li>
@@ -112,14 +115,15 @@
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6 col-sm-6 offset-lg-4 social-widget">
-                    <div class="single-footer-widget">
+                    <div class="single-footer-widget text-center">
                         <h6>Follow Us</h6>
-                        <p>Let us be social</p>
+                        <p class="badge badge-pill p-3 w-100 badge-light"><i class="fa fa-facebook mr-2"></i>One Days Coffee</p>
+                        <p class="badge badge-pill p-3 w-100 badge-light"><i class="fa fa-twitter mr-2"></i>@OneDaysCoffee</p>
                         <div class="footer-social d-flex align-items-center">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-dribbble"></i></a>
-                            <a href="#"><i class="fa fa-behance"></i></a>
+                        
+                                
+                            {{-- <li><i class="fa fa-twitter text-white"></i></li> --}}
+                        
                         </div>
                     </div>
                 </div>

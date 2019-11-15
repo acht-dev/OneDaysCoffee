@@ -1,0 +1,38 @@
+/* Home */
+/* Slider */
+.slider-home{
+    width: auto;
+    object-fit: cover;
+}
+
+.carousel,.carousel-item{
+    height: 720px;
+    object-fit: cover;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.carousel-caption{
+    left: 0%;
+    right: 0;
+    top: 30%;
+    bottom: 100%;
+}
+
+.bg-coffee{
+    background: burlywood;
+}
+
+.Homepage_banner{
+    position: relative;
+}
+
+#Homepage_title,#Homepage_b_banner{
+    font-family: 'Lato', sans-serif;
+    color:white;
+    position: absolute;
+    top:25%;
+    left: 50%;
+    transform: translateX(-50%);
+}

@@ -1,24 +1,7 @@
 @extends('layout.layout')
-@section('banner')
-<!-- start banner Area -->
-<section class="banner-area" id="home">
-    <div class="container">
-        <div class="row fullscreen d-flex align-items-center justify-content-start">
-            <div class="banner-content col-lg-7">
-                <h6 class="text-white text-uppercase">Now you can feel the Energy</h6>
-                <h1>
-                    Start your day with <br>
-                    a black Coffee
-                </h1>
-                <a href="#" class="primary-btn text-uppercase">Buy Now</a>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End banner Area -->
-@endsection
+
 @section('header')
-<div class="menu-content pb-60 col-lg-10">
+<div class="container-fluid mt-5">
     <div class="title text-center">
         <h1 class="mb-10">Pendaftaran Member</h1>
         <p>Yuk Registrasi Diri Kamu!</p>
@@ -27,34 +10,18 @@
 @endsection
 
 @section('menu')
-<div class="col-lg-8 offset-lg-3">
-    <form action="/login" method="POST">
-        {{ csrf_field() }}
-    <div class="row">
-        <div class="col-md-3">
-            <h4 style="margin-right: 10px">Username</h4>
-        </div>
-        <div class="col-md-9">
-            <input type="text" style="width: 300px;" name="username">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-3">
-            <h4 style="margin-right: 10px">Password</h4>
-        </div>
-        <div class="col-md-9">
-            <input type="password" style="width: 300px;" name="pass">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-3">
-            <p>Belum Ada Akun?<a href="/register"> Register Aja!</a></p>
-        </div>
-        <div class="col-md-9">
-            <input type="submit" value="Login">
-        </div>
-    </div>
+
+<div class="container w-50 my-4">
+<form action="/login" method="POST">
+    {{ csrf_field() }}
+    <input name="username" type="text" class="form-control my-1" placeholder="Username">
+    <input name="pass" type="password" class="form-control my-1" id="exampleInputPassword1" placeholder="Password">
+    <button type="submit" value="Login" class="btn btn-primary btn-block my-1">Login</button>
+    <p class="h5 mt-5 text-center">Belum punya Akun ?</p>
+    <a  class="btn btn-outline-primary btn-block my-1" href="/register">Register</a>
 </form>
+</div>
+
     {{-- <script>
         // $('#myModal').modal('show')
         if({{session::has('salahlagi')}}){

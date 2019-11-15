@@ -1,76 +1,44 @@
 @extends('layout.layout')
 
-@section('banner')
-<!-- start banner Area -->
-<section class="banner-area" style="background:url({{asset('/img/etalase3.jpg')}})" id="home">
-    <div class="container">
-        <div class="row fullscreen d-flex align-items-center justify-content-start">
-            <div class="banner-content col-lg-7">
-                <h6 class="text-white text-uppercase">Now you can feel the Energy</h6>
-                <h1>
-                    Start your day with <br>
-                    a black Coffee
-                </h1>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End banner Area -->
-@endsection
 <!-- Start video-sec Area -->
 
 <!-- End video-sec Area -->
 
 <!-- Start menu Area -->
 @section('menu')
-<section class="menu-area section-gap" id="coffee">
-    <div class="container">
-        <div class="row d-flex justify-content-center">
-            <div class="menu-content pb-60 col-lg-10">
-                <div class="title text-center">
-                    <h1 class="mb-10">Menu Coffee One's Day</h1>
-                    <br>
-                    <h3>Espresso Based</h3>
-                </div>
+<div class="container-fluid bg-coffee py-5 my-4 rounded" style="background:url({{asset('/img/banner-02.jpg')}})">
+    <div class="row d-flex justify-content-center">
+        <div class="menu-content">
+            <div class="title text-center">
+                <h1 class="mb-10 text-white">One Days Beverage Menu</h1>
             </div>
         </div>
+    </div>
+</div>
+<section class="menu-area" id="coffee">
+    <div class="container">
         <div class="row">
             @foreach($coffee as $k)
             <div class="col-lg-4">
-                <a href="/detail">
-                    <div class="single-menu">
-                        <div class="title-div justify-content-between d-flex">
-                            <h4>{{$k->nama_barang}}</h4>
-                            <p class="price float-right">
-                                Rp. {{$k->harga}}
+                    <a href="/detail">
+                        <figure class="single-menu p-2">                            
+                            <img src="img/OREO CHOCO.jpg" class="rounded w-100 card-img-top"> 
+                            <div class="min-artikel-height">
+                            <figcaption class="title-div justify-content-between d-flex py-3">
+                                <div class="h4 text-muted mx-auto">{{$k->nama_barang}}</div>
+                                <p class="h4 price float-right mx-auto">Rp. {{$k->harga}}</p>
+                            </figcaption>
+                            <p class="p-3 text-dark">
+                                {{$k->deskripsi}} 
                             </p>
-                        </div>
-                        <p>
-                            {{$k->deskripsi}}
-                        </p>
-                    </div>
-                </a>
-                </div>
+                            </div>
+                        </figure>
+                    </a>
+            </div>
             @endforeach
+        </div>
             
-            <div class="col-lg-12" style="margin-top:20px; margin-bottom:20px">
-                <h3 align="center">Non Coffee</h3>
-            </div>
-            <div class="col-lg-4">
-                <a href="/detail">
-                    <div class="single-menu">
-                        <div class="title-div justify-content-between d-flex">
-                            <h4>Oreo</h4>
-                            <p class="price float-right">
-                                Rp. 14,000,00
-                            </p>
-                        </div>
-                        <p>
-                            Usage of the Internet is becoming more common due to rapid advance.
-                        </p>
-                    </div>
-                </a>
-            </div>
+
         </div>
     </div>
 </section>
