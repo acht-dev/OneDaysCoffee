@@ -7,7 +7,7 @@
         <div class="row d-flex align-items-center justify-content-start">
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                         <div class="carousel-caption d-block">
-                            <div class="h1 my-3" style="font-size: 50px;">One Days Coffee Shop</div>
+                            <p class="h1 my-3 home_title" style="font-size: 50px;">One Days Coffee Shop</p>
                             <p style="font-size: 20px;">Untuk para pencinta kopi dan penikmat senja</p>
                         </div>
                     <div class="carousel-inner">

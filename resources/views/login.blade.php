@@ -16,9 +16,9 @@
     {{ csrf_field() }}
     <input name="username" type="text" class="form-control my-1" placeholder="Username">
     <input name="pass" type="password" class="form-control my-1" id="exampleInputPassword1" placeholder="Password">
-    <button type="submit" value="Login" class="btn btn-primary btn-block my-1">Login</button>
+    <button type="submit" value="Login" class="btn btn-danger btn-block my-1">Login</button>
     <p class="h5 mt-5 text-center">Belum punya Akun ?</p>
-    <a  class="btn btn-outline-primary btn-block my-1" href="/register">Register</a>
+    <a  class="btn btn-outline-danger btn-block my-1" href="/register">Register</a>
 </form>
 </div>
 

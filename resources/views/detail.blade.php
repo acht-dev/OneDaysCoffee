@@ -1,56 +1,34 @@
 @extends('layout.layout')
-@section('banner')
-<!-- start banner Area -->
-<section class="banner-area" id="home">
-    <div class="container">
-        <div class="row fullscreen d-flex align-items-center justify-content-start">
-            <div class="banner-content col-lg-7">
-                <h6 class="text-white text-uppercase">Now you can feel the Energy</h6>
-                <h1>
-                    Start your day with <br>
-                    a black Coffee
-                </h1>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End banner Area -->
-@endsection
-@section('header')
-    <div class="menu-content pb-60 col-lg-10">
-        <div class="title text-center">
-            <h1 class="mb-10">What kind of Coffee we serve for you</h1>
-            <p>Who are in extremely love with eco friendly system.</p>
-        </div>
-    </div>
-@endsection
+
 @section('menu')
 <div class="container p-4 my-3">
-
-        <div class="row">
+    {{-- Start Detail --}}
+        <div class="row single-menu py-5 ">
             <div class="col-5">
-                <img src="img/OREO.jpg" class="img-fluid Detail_image rounded" id="detail_gambar" alt="detail gambar">
+                <img src="img/OREO CHOCO.jpg" class="img-fluid Detail_image rounded" id="detail_gambar" alt="detail gambar">
             </div>
-            <div class="col-7 p-4 card">
-                <div class="h3" id="detail_judul">Oreo Milkshake</div>
-                <div class="h5" id="detail_harga">12.000 IDR</div>
-                <div class="h6 font-weight-normal" id="detail_desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem sequi reprehenderit nulla eveniet a obcaecati voluptates quas repellendus alias? Possimus distinctio deserunt cupiditate, molestiae natus facilis eius consequuntur quo accusamus.</div>
-                <div class="input-group my-auto">
+            <div class="col-7 p-4">
+                <div class="">
+                    <div class="h3 my-2" >Oreo Milkshake</div>
+                    <div class="h5 my-2" >12.000 IDR</div>
+                    <div class="h6 my-2 font-weight-normal text-justify"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem sequi reprehenderit nulla eveniet a obcaecati voluptates quas repellendus alias? Possimus distinctio deserunt cupiditate, molestiae natus facilis eius consequuntur quo accusamus.</div>
+                </div>
+                <div class="input-group my-4">
                     <span class="input-group-btn">
-                        <button type="button" class="btn btn-number"  data-type="minus" data-field="quant[1]">
-                            <i class="fa fa-minus" aria-hidden="true"></i>
+                        <button type="button" class="btn bg-white btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                            <span class="fa fa-minus"></span>
                         </button>
                     </span>
-                    <input type="text" name="quant[1]" class="form-control col-2 input-number rounded mx-1 w-50" value="0" min="1" max="100">
+                    <input type="text" name="quant[1]" class="form-control input-number col-2 mx-2 w-25 rounded" value="1" min="1" max="100">
                     <span class="input-group-btn">
-                        <button type="button" class="btn  btn-number" data-type="plus" data-field="quant[1]">
-                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        <button type="button" class="btn bg-white btn-number" data-type="plus" data-field="quant[1]">
+                            <span class="fa fa-plus"></span>
                         </button>
                     </span>
                 </div>
-                <div class="row my-auto">
+                <div class="row my-3">
                     <div class="col-6">
-                      <a href="keranjang.html" role="button" class="title_link">
+                      <a role="button" class="title_link">
                         <button type="button" class="btn btn-outline-danger w-100">
                             Beli
                         </button>
@@ -62,61 +40,22 @@
                 </div>
             </div>
         </div>
-
-        <div class="h3 my-3">Menu Rekomendasi Dari Kami</div>
-        
-        <div class="row">
+        {{-- End Detail --}}
+        <div class="h3 my-3 pt-5">Menu Rekomendasi Dari Kami</div>
+        <div class="row my-1">
             <div class="col-3">
-                    <figure class="rounded bg-white shadow-sm Item border">                            
-                              <img src="img/SWEET TEA.jpg" alt="" class="artikel-thumbnail w-100 card-img-top"> 
-                          <div class="min-artikel-height">
-                            <figcaption class="p-4 card-img-bottom d-block">
-                              <div class="h6 mb-0 text-small text-muted">Sweet Tea</div>
-                            </figcaption>
-                          </div>
-                              <figcaption class="pl-4 pb-2 card-img-bottom d-block">
-                                <p class="h6 text-secondary">12000 IDR</p>
-                              </figcaption>
-                        </figure>
-            </div>
-            <div class="col-3">
-                    <figure class="rounded bg-white shadow-sm Item border">                            
-                              <img src="img/OREO CHOCO.jpg" alt="" class="artikel-thumbnail w-100 card-img-top"> 
-                          <div class="min-artikel-height">
-                            <figcaption class="p-4 card-img-bottom d-block">
-                              <div class="h6 mb-0 text-small text-muted">Sweet Tea</div>
-                            </figcaption>
-                          </div>
-                              <figcaption class="pl-4 pb-2 card-img-bottom d-block">
-                                <p class="h6 text-secondary">12000 IDR</p>
-                              </figcaption>
-                        </figure>
-            </div>
-            <div class="col-3">
-                    <figure class="rounded bg-white shadow-sm Item border">                            
-                              <img src="img/MILKSHAKE CARAMEL.jpg" alt="" class="artikel-thumbnail w-100 card-img-top"> 
-                          <div class="min-artikel-height">
-                            <figcaption class="p-4 card-img-bottom d-block">
-                              <div class="h6 mb-0 text-small text-muted">Sweet Tea</div>
-                            </figcaption>
-                          </div>
-                              <figcaption class="pl-4 pb-2 card-img-bottom d-block">
-                                <p class="h6 text-secondary">12000 IDR</p>
-                              </figcaption>
-                        </figure>
-            </div>
-            <div class="col-3">
-                    <figure class="rounded bg-white shadow-sm Item border">                            
-                              <img src="img/MILK TEA.jpg" alt="" class="artikel-thumbnail w-100 card-img-top"> 
-                          <div class="min-artikel-height">
-                            <figcaption class="p-4 card-img-bottom d-block">
-                              <div class="h6 mb-0 text-small text-muted">Sweet Tea</div>
-                            </figcaption>
-                          </div>
-                              <figcaption class="pl-4 pb-2 card-img-bottom d-block">
-                                <p class="h6 text-secondary">12000 IDR</p>
-                              </figcaption>
-                        </figure>
+                <figure class="single-menu p-1">                            
+                    <img src="img/OREO CHOCO.jpg" class="rounded w-100 card-img-top"> 
+                    <div class="min-artikel-height">
+                    <figcaption class="title-div justify-content-between d-flex py-3">
+                        <div class="h4 text-muted mx-auto">Sweet Tea</div>
+                        <p class="h4 price float-right mx-auto">12000 IDR</p>
+                    </figcaption>
+                    <p class="p-3">
+                        Choco Milkshake with oreo topping 
+                    </p>
+                    </div>
+                </figure>
             </div>
         </div>
     </div>

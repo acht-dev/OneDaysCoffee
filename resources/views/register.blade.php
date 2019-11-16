@@ -22,9 +22,9 @@
       <div class="h6 mt-4 p-2">Akun</div>
       <input type="text" name="username" class="form-control my-1" id="" aria-describedby="emailHelpId" placeholder="Username Akun">
       <input type="password" name="pass" class="form-control my-1" id="" aria-describedby="emailHelpId" placeholder="Password Akun">
-        <button type="submit" class="btn btn-primary btn-block" value="register">Registrasi</button>
+        <button type="submit" class="btn btn-danger btn-block" value="register">Registrasi</button>
         <p class="h5 mt-5 text-center">Sudah punya Akun ?</p>
-        <a  class="btn btn-outline-primary btn-block my-1" href="/login">Login</a>
+        <a  class="btn btn-outline-danger btn-block my-1" href="/login">Login</a>
     </form>
 </div>
 

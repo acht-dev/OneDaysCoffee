@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
 /* Home */
 /* Slider */
 .slider-home{
@@ -28,11 +29,20 @@
     position: relative;
 }
 
-#Homepage_title,#Homepage_b_banner{
-    font-family: 'Lato', sans-serif;
-    color:white;
-    position: absolute;
-    top:25%;
-    left: 50%;
-    transform: translateX(-50%);
+
+.home_title{
+    font-family: 'Pacifico', cursive;
+    color: white;
+}
+
+@font-face{
+        font-family: 'Pacifico';
+        font-style: normal;
+        src: url('fonts/Pacifico-Regular.ttf');
+}
+/* Detail */
+.Detail_image{
+    height: 320px;
+    width: auto;
+    object-fit: cover;
 }

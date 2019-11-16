@@ -46,9 +46,9 @@
                 <nav id="nav-menu-container">
                     <ul class="nav-menu">
                         <li class="menu-active"><a href="/home">Home</a></li>
-                        <li class="menu-has-children text-white"><a>Main Menu</a>
+                        <li class="menu-has-children text-white"><a>Our Product</a>
                             <ul>
-                                <li><a href="/coffee">Coffee</a></li>
+                                <li><a href="/coffee">Coffee Beverage</a></li>
                                 <li><a href="/bijih">Coffee Beans</a></li>
                                 <li><a href="/bubuk">Pulverized Coffee beans</a></li>
                             </ul>
