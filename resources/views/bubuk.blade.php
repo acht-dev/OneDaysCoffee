@@ -7,7 +7,7 @@
 
 <!-- Start menu Area -->
 @section('menu')
-<div class="container-fluid bg-coffee py-5 my-4 rounded" style="background:url({{asset('/img/banner-02.jpg')}})">
+<div class="container-fluid bg-coffee py-5 my-4 rounded" style="background:url({{asset('/img/banner-03.jpg')}})">
     <div class="row d-flex justify-content-center">
         <div class="menu-content">
             <div class="title text-center">
@@ -20,7 +20,7 @@
     <div class="container">
         <div class="row">
             {{-- @foreach($coffee as $k) --}}
-            <div class="col-lg-4">
+            <div class="col-4">
                     <a href="/detail">
                         <figure class="single-menu p-2">                            
                             <img src="img/OREO CHOCO.jpg" class="rounded w-100 card-img-top"> 

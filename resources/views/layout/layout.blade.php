@@ -102,8 +102,8 @@
 
 
     <!-- start footer Area -->
-    <footer class="footer-area section-gap">
-        <div class="container">
+    <footer class="footer-area">
+        <div class="container ">
             <div class="row">
                 <div class="col-lg-5 col-md-6 col-sm-6">
                     <div class="single-footer-widget">

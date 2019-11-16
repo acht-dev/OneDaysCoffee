@@ -1,7 +1,7 @@
 @extends('layout.layout')
 
 @section('header')
-<div class="menu-content pb-60 col-lg-10">
+<div class="menu-content col-lg-10">
     <div class="title text-center">
         <h1 class="mb-10">What kind of Coffee we serve for you</h1>
         <p>Who are in extremely love with eco friendly system.</p>
@@ -10,7 +10,6 @@
 @endsection
 @section('menu')
 <div class="container p-4 my-3">
-        <div class="h1 my-4">Keranjang</div>
       <div class="card my-2">
         <div class="row">
           <div class="col-2">

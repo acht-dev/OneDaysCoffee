@@ -1,7 +1,11 @@
 @extends('layout.layout')
 @section('banner')
 <!-- start banner Area -->
-<div class="h-25" style="background:url({{asset('/img/banner-01.jpg')}})" id="home">
+
+<!-- End banner Area -->
+@endsection
+@section('header')
+<div class="h-25 rounded" style="background:url({{asset('/img/banner-02.jpg')}})" id="home">
     <div class="container">
         <div class="fullscreen d-flex align-items-center justify-content-start">
             <div class="menu-content p-5 my-5 card col-lg-10">
@@ -14,5 +18,4 @@
         </div>
     </div>
 </div>
-<!-- End banner Area -->
 @endsection

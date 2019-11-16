@@ -19,7 +19,7 @@
     <div class="container">
         <div class="row">
             {{-- @foreach($coffee as $k) --}}
-            <div class="col-lg-4">
+            <div class="col-4">
                     <a href="/detail">
                         <figure class="single-menu p-2">                            
                             <img src="img/OREO CHOCO.jpg" class="rounded w-100 card-img-top"> 
