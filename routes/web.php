@@ -41,6 +41,9 @@ Route::get('detail', function(){
 Route::get('keranjang', function(){
     return view('keranjang');
 });
+Route::get('pembayaran', function(){
+    return view('pembayaran');
+});
 
 Route::get('/register', 'UserController@tambah');
 Route::post('/store', 'UserController@store');

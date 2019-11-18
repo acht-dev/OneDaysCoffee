@@ -3,8 +3,8 @@
 @section('header')
 <div class="container-fluid mt-5">
     <div class="title text-center">
-        <h1 class="mb-10">Pendaftaran Member</h1>
-        <p>Yuk Registrasi Diri Kamu!</p>
+        <h1 class="mb-10">Mulai Beli Kopi Kesukaanmu</h1>
+        <p>Masuk ke Akunmu!</p>
     </div>
 </div>
 @endsection

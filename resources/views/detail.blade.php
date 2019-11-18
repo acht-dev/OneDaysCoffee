@@ -27,14 +27,8 @@
                     </span>
                 </div>
                 <div class="row my-3">
-                    <div class="col-6">
-                      <a role="button" class="title_link">
-                        <button type="button" class="btn btn-outline-danger w-100">
-                            Beli
-                        </button>
-                      </a>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 p-0">
                         <a href="/keranjang"><button type="button" class="btn btn-danger w-100">Masukan ke Keranjang</button></a>
                     </div>
                 </div>
