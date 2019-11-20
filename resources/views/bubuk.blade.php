@@ -7,7 +7,7 @@
 
 <!-- Start menu Area -->
 @section('menu')
-<div class="container-fluid bg-coffee py-5 my-4 rounded" style="background:url({{asset('/img/banner-03.jpg')}})">
+<div class="container-fluid py-5 my-4 rounded" style="background:url({{asset('/img/banner-03.jpg')}})">
     <div class="row d-flex justify-content-center">
         <div class="menu-content">
             <div class="title text-center">
