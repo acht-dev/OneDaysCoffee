@@ -6,10 +6,12 @@
     <div class="container-fluid">
         <div class="row d-flex align-items-center justify-content-start">
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-caption d-block">
-                            <p class="h1 my-3 home_title" style="font-size: 50px;">One Days Coffee Shop</p>
-                            <p style="font-size: 20px;">Untuk para pencinta kopi dan penikmat senja</p>
-                        </div>
+                    <div class="carousel-caption d-block">
+                    <div class="container bg-coffee-trasparent rounded p-2">
+                        <p class="h1 my-3 text-white home_title" style="font-size: 50px;">One Days Coffee Shop</p>
+                        <p style="font-size: 20px;">Untuk para pencinta kopi dan penikmat senja</p>
+                    </div>
+                    </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="img/etalase1.jpg" class="slider-home d-block w-100" alt="...">

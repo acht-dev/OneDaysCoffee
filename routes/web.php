@@ -44,11 +44,16 @@ Route::get('keranjang', function(){
 Route::get('pembayaran', function(){
     return view('pembayaran');
 });
+Route::get('transaksi', function(){
+    return view('transaksi');
+});
 
 Route::get('/register', 'UserController@tambah');
 Route::post('/store', 'UserController@store');
 
 Route::get('/coffee','BarangController@liatkopi');
+Route::get('/bubuk','BarangController@liatbubuk');
+Route::get('/bijih','BarangController@liatbiji');
 
 Route::post('/login', 'UserController@masuk');
 

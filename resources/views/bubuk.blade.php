@@ -19,24 +19,24 @@
 <section class="menu-area" id="coffee">
     <div class="container">
         <div class="row">
-            {{-- @foreach($coffee as $k) --}}
-            <div class="col-4">
+            @foreach($bubuk as $k)
+            <div class="col-4 py-2">
                     <a href="/detail">
-                        <figure class="single-menu p-2">                            
+                        <figure class="single-menu h-100 my-2 p-2">                            
                             <img src="img/OREO CHOCO.jpg" class="rounded w-100 card-img-top"> 
                             <div class="min-artikel-height">
-                            <figcaption class="title-div justify-content-between d-flex py-3">
-                                {{-- <div class="h4 text-muted mx-auto">{{$k->nama_barang}}</div>
-                                <p class="h4 price float-right mx-auto">Rp. {{$k->harga}}</p> --}}
+                            <figcaption class="title-div p-3">
+                                <div class="h4 text-muted mx-auto">{{$k->nama_barang}}</div>
+                                <p class="h4 price mx-auto">Rp. {{$k->harga}}</p>
                             </figcaption>
                             <p class="p-3 text-dark">
-                                {{-- {{$k->deskripsi}}  --}}
+                                {{$k->deskripsi}} 
                             </p>
                             </div>
                         </figure>
                     </a>
             </div>
-            {{-- @endforeach --}}
+            @endforeach
         </div>
     </div>
 </section>

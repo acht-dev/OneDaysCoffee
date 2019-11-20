@@ -58,7 +58,7 @@
                             <li class="menu-has-children"><a href="">{{Session::get('nama')}}</a>
                                 <ul>
                                     <li><a href="/keranjang"><i class="fa fa-shopping-cart fa-fw mx-1"></i>Keranjang Anda</a></li>
-                                    <li><a href=""><i class="fa fa-money fa-fw mx-1" ></i>Transaksi Anda</a></li>
+                                    <li><a href="/transaksi"><i class="fa fa-money fa-fw mx-1" ></i>Transaksi Anda</a></li>
                                     <li><a href="/logout"><i class="fa fa-arrow-circle-right fa-fw mx-1"></i>Log Out</a></li>
                                 </ul>
                             </li>

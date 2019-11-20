@@ -6,7 +6,7 @@
       <div class="menu-content">
           <div class="title text-center">
               <h1 class="mb-10">Keranjang Anda</h1>
-              <div class="font-weight-light">Siap Untuk membayar ?</div>
+              <div class="font-weight-light">Yakin gak beli yang lain ?</div>
           </div>
       </div>
   </div>
